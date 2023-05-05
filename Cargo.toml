@@ -1,0 +1,13 @@
+[package]
+name = "harm"
+version = "1.0.0"
+edition = "2021"
+authors = ["dorian"]
+description = "computes betting sizes which optimize the harmonic mean"
+
+[profile.release]
+strip = "symbols"
+
+[dependencies]
+clap = { version = "4.2.5", features = ["derive"] }
+rustyline = "11.0.0"
